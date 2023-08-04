@@ -1,0 +1,28 @@
+$main-font: 'Nunito Sans', sans-serif;
+$secondary-font: 'Oswald', sans-serif;
+
+$font-first-color: #2C314B;
+$font-first-faded-color: #424242;
+$font-second-faded-color: #8E8E8E;
+$font-second-color: #737373;
+$font-accent-color: #B47139;
+$font-accent-faded-color: #9A6437;
+
+$card-dark-color: #1C1B1B;
+$card-dark-faded-color: #2C314B;
+$card-light-color: #F7F7F7;
+$card-light-faded-color: #E5E6E6;
+
+$rating-star-color: #F5CC26;
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+body {
+  background-color: #FFFFFF;
+  color: $font-first-color;
+  font-family: $main-font;
+  padding-top: 80px;
+}
