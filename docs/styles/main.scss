@@ -1,6 +1,218 @@
 @import 'common';
 
+body {
+min-width: 100vw;
+min-height: 100vh;
+}
+
 header {
   position: fixed;
+  top: 0;
+  z-index: 1;
   height: 80px;
+  background-color: #DDD7D1;
+  width: 1440px;
+ }
+
+#header-content {
+  width: auto;
+  display: flex;
+  align-items:center;
+  justify-content: space-between;
+  gap: 209px;
+  height: 40px;
+  margin-left: 166.5px;
+  margin-top: 21px;
+  margin-right: 166.5px;
+  margin-bottom: 19px;
+}
+
+.company-icon {
+  display: flex;
+   align-content: center;
+}
+
+.logo-name {
+  font-family: $secondary-font;
+  color: $card-dark-faded-color;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 60px;
+  letter-spacing: 0.56px;
+}
+
+#navigation-bar {
+  width: 540px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.nav-btn {
+  height: 24px;
+  text-decoration: none;
+  color: $card-dark-faded-color;
+  
+  &::after {
+    display: block;
+    content: "";
+    width: 0%;
+    height: 1px;
+    background-color: $card-dark-faded-color;
+  }
+  
+  &:hover::after,
+  &:active::after {
+    width: 100%;
+    transition: all .3s ease-in;
+  }
+}
+
+#customer-panel {
+  display: flex;
+  align-items: center;
+  gap: 27px;
+  position: relative;
+}
+
+.notify-circle {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background-color: #781414;
+  position: absolute;
+  top: -4px;
+  right: -4px;
+}
+
+#count-of-items {
+  font-size: 6px;
+  font-weight: 300;
+  color: white;
+  position: absolute;
+  top: -4px;
+  right: -2.2px;
+}
+
+#home {
+  width: 1440px;
+  height: 821px;
+  background-image: url("../assets/img/background.png") ;
+}
+#home-page-block {
+  padding: 280px 0 0 210px;
+}
+
+#line1 {
+  background-color: $font-second-faded-color;
+  width: 292px;
+  height: 0.4px;
+  position: absolute;
+  left: 186px;
+}
+
+#line2 {
+  background-color: $font-second-faded-color;
+  width: 0.4px;
+  height: 261px;
+  position: absolute;
+  top: 252px;
+}
+
+h1 {
+  color: $card-dark-color;
+  font-size: 50px;
+  font-weight: 600;
+  padding-left: 18px;
+  padding-top: 7px;
+}
+
+#first-hptext {
+  font-weight: 400;
+  padding-left: 21px;
+  padding-top: 22px;
+}
+
+#second-hptext {
+  color: $card-dark-color;
+  font-size: 24px;
+  font-weight: 400;
+  padding-left: 18px;
+  padding-top: 15px;
+}
+
+#third-hptext {
+  color: $font-second-faded-color;
+  font-weight: 400;
+  padding-top: 15px;
+}
+
+footer {
+  padding-top: 97px;
+}
+
+#contact-us {
+  background-image: url("../assets/img/footer-background.png");
+  width: 1440px;
+  height: 422px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 7px;
+}
+
+#footer-logo {
+  width: 63px;
+  height: 70px;
+  padding-bottom: 7px;
+}
+
+#footer-logo-name {
+  font-size: 35px;
+}
+
+#first-fttext {
+  font-size: 36px;
+  font-weight: 400;
+  color: $card-dark-color;
+}
+
+#seconds-fttext {
+  font-size: 18px;
+  font-weight: 300;
+  color: $font-first-faded-color;
+  text-align: center;
+}
+
+#subscribe-form {
+  display: flex;
+  gap: 10px;
+  margin-top: 17px;
+  margin-bottom: 78px;
+  height: 37px;
+   font-size: 12px;
+  font-weight: 300;
+}
+
+input {
+  padding-left: 10px;
+  width: 275px;
+  border-radius: 4px;
+  border: 0.8px solid #5A5A5A;
+  background-color: #DDD7D1;
+  color: $font-second-faded-color;
+}
+
+#footer-btn {
+  width: 127px;
+  color: $card-dark-color;
+  border-radius: 4px;
+  border: 0.8px solid #5A5A5A;
+  background-color: #DDD7D1;
+  text-align: center;
+}
+
+#copyright {
+  height: 59px;
+  background-color: white;
 }

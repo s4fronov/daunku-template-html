@@ -11,18 +11,59 @@
 </head>
 <body>
   <header>
-    <div class="company-icon"></div>
-    <nav class="navigation-bar"></nav>
-    <div class="customer-panel"></div>
+    <div id="header-content">
+      <div class="company-icon">
+        <img src="./assets/svg/logo.svg">
+        <span class="logo-name">interior</span>
+      </div>
+      <nav id="navigation-bar">
+        <a href="#home" class="nav-btn">Home</a>
+        <a href="#collections" class="nav-btn">Collections</a>
+        <a href="#items" class="nav-btn">Items</a>
+        <a href="#reviews" class="nav-btn">Reviews</a>
+        <a href="#blog" class="nav-btn">Blog</a>
+        <a href="#contact-us" class="nav-btn">Contact us</a>
+      </nav> 
+      <div id="customer-panel">
+        <img src="./assets/svg/serch.svg">
+        <img src="./assets/svg/basket.svg">
+        <div class="notify-circle"></div>
+        <span id="count-of-items">1</span>
+      </div>
+    </div>
   </header>
-
-  <section id="home"></section>
+  <section id="home">
+    <div id="home-page-block">
+      <div id="line1"></div>
+      <div id="line2"></div>
+      <div id="first-hptext">INTERIOR</div>
+      <h1>Home Designs 
+        <br>Made Easy
+      </h1>
+      <span id="second-hptext">$416.00</span>
+      <span id="third-hptext">Starting</span>
+      <!-- <button id="home-page-btn">Shop now</button> -->
+    </div>
+  </section>
   <section id="collections"></section>
   <section id="items"></section>
   <section id="reviews"></section>
   <section id="recommend"></section>
   <section id="blog"></section>
 
-  <footer id="contact-us"></footer>
+  <footer id="contact-us">
+    <div class="company-icon">
+      <img src="./assets/svg/logo.svg" id="footer-logo">
+      <span class="logo-name" id="footer-logo-name">interior</span>
+    </div>
+    <span id="first-fttext">Join Now For Early Access</span>
+    <span id="seconds-fttext">Suspendisse eu velit est. Cras nec vestibulum 
+      <br>quam. Donec tincidunt purus nec enim tincidunt, sit
+    </span>
+    <div id="subscribe-form">
+      <input type="email" placeholder="Enter your email address...">
+      <button id="footer-btn">SUBSCRIBE</button>
+    </div>
+  </footer>
 </body>
 </html>
