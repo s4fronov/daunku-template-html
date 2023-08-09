@@ -21,8 +21,15 @@ $rating-star-color: #F5CC26;
 }
 
 body {
+  max-width: 1440px;
   background-color: #FFFFFF;
   color: $font-first-color;
   font-family: $main-font;
   padding-top: 80px;
+  margin: 0 auto;
+}
+
+a {
+  text-decoration: none;
+  color: $font-first-color;
 }

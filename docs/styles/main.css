@@ -4,13 +4,105 @@
 }
 
 body {
+  max-width: 1440px;
   background-color: #FFFFFF;
   color: #2C314B;
   font-family: "Nunito Sans", sans-serif;
   padding-top: 80px;
+  margin: 0 auto;
+}
+
+a {
+  text-decoration: none;
+  color: #2C314B;
 }
 
 header {
   position: fixed;
   height: 80px;
+}
+
+section {
+  margin: 94px auto 20px;
+}
+
+#collections {
+  display: flex;
+}
+
+.carousel {
+  display: flex;
+  width: 1110px;
+  gap: 30px;
+  overflow: hidden;
+}
+.carousel:only-child {
+  transition: all 0.3s ease;
+}
+
+.arrow {
+  position: relative;
+}
+.arrow.back {
+  right: 44px;
+}
+.arrow.forward {
+  left: 44px;
+}
+
+.carousel-card {
+  position: relative;
+  width: 350px;
+  height: 450px;
+  flex-shrink: 0;
+  background: #E5E6E6;
+}
+
+p.carousel-card-name {
+  font-family: "Nunito Sans", sans-serif;
+  font-size: 30px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 40px;
+  width: 215px;
+  height: 80px;
+  margin-top: 50px;
+  margin-left: 30px;
+}
+
+a.carousel-card-btn {
+  position: relative;
+  text-align: center;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 60px;
+  margin-top: 16px;
+  margin-left: 36px;
+  padding: 7px 17px;
+  border: 1px #2C314B solid;
+  transition: background-color 0.3s ease-out 100ms, color 0.3s ease-out 100ms;
+}
+a.carousel-card-btn:hover, a.carousel-card-btn:active {
+  background-color: #1C1B1B;
+  color: #E5E6E6;
+}
+a.carousel-card-btn::before, a.carousel-card-btn::after {
+  content: "";
+  position: absolute;
+  width: 7px;
+  height: 7px;
+  pointer-events: none;
+}
+a.carousel-card-btn::before {
+  top: -8px;
+  left: -8px;
+  border-bottom: 1px #2C314B solid;
+  border-right: 1px #2C314B solid;
+}
+a.carousel-card-btn::after {
+  bottom: -8px;
+  right: -8px;
+  border-top: 1px #2C314B solid;
+  border-left: 1px #2C314B solid;
 }/*# sourceMappingURL=main.css.map */

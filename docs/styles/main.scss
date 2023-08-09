@@ -4,3 +4,96 @@ header {
   position: fixed;
   height: 80px;
 }
+
+section {
+  margin: 94px auto 20px;
+}
+
+#collections {
+  display: flex;
+}
+
+.carousel {
+  display: flex;
+  width: 1110px;
+  gap: 30px;
+  overflow: hidden;
+  &:only-child {
+    transition: all .3s ease;
+  }
+}
+
+.arrow {
+  position: relative;
+  &.back {
+    right: 44px;
+  }
+  
+  &.forward {
+    left: 44px;
+  }
+}
+
+.carousel-card {
+  position: relative;
+  width: 350px;
+  height: 450px;
+  flex-shrink: 0;
+  background: $card-light-faded-color;
+}
+
+p.carousel-card-name {
+  font-family: $main-font;
+  font-size: 30px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 40px;
+  width: 215px;
+  height: 80px;
+  margin-top: 50px;
+  margin-left: 30px;
+}
+
+a.carousel-card-btn {
+  position: relative;
+  text-align: center;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 60px;
+  margin-top: 16px;
+  margin-left: 36px;
+  padding: 7px 17px;
+  border: 1px $font-first-color solid;
+  transition: background-color .3s ease-out 100ms,
+    color .3s ease-out 100ms;
+
+  &:hover,
+  &:active {
+    background-color: $card-dark-color;
+    color: $card-light-faded-color;
+  }
+
+  &::before,
+  &::after {
+    content: "";
+    position: absolute;
+    width: 7px;
+    height: 7px;
+    pointer-events: none;
+  }
+
+    &::before {
+    top: -8px;
+    left: -8px;
+    border-bottom: 1px $font-first-color solid;
+    border-right: 1px $font-first-color solid;
+  }
+
+  &::after {
+    bottom: -8px;
+    right: -8px;
+    border-top: 1px $font-first-color solid;
+    border-left: 1px $font-first-color solid;
+  }
+}
