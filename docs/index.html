@@ -11,28 +11,56 @@
 </head>
 <body>
   <header>
-    <div class="company-icon"></div>
-    <nav class="navigation-bar"></nav>
-    <div class="customer-panel"></div>
+    <div id="header-content">
+      <div class="company-icon">
+        <img id="header-logo" src="./assets/svg/logo.svg">
+        <span class="company-name">interior</span>
+      </div>
+      <nav id="navigation-bar">
+        <a href="#home" class="nav-btn">Home</a>
+        <a href="#collections" class="nav-btn">Collections</a>
+        <a href="#items" class="nav-btn">Items</a>
+        <a href="#reviews" class="nav-btn">Reviews</a>
+        <a href="#blog" class="nav-btn">Blog</a>
+        <a href="#contact-us" class="nav-btn">Contact us</a>
+      </nav> 
+      <div id="customer-panel">
+        <img src="./assets/svg/serch.svg">
+        <img src="./assets/svg/basket.svg">
+        <div class="notification-circle"></div>
+        <span id="count-of-items">1</span>
+      </div>
+    </div>
   </header>
-
-  <section id="home"></section>
+  <section id="home">
+    <div id="home-content">
+      <div id="promo-block">
+        <div id="first-hptext">INTERIOR</div>
+        <h1>Home Designs 
+          <br>Made Easy
+        </h1>
+        <span id="second-hptext">$416.00</span>
+        <span id="third-hptext">Starting</span>
+      </div>
+      <a href="#" id="promo-btn" class="carousel-card-btn btn-dark">SHOP NOW</a>
+    </div>
+  </section>
   <section id="collections">
     <img onclick="doBackSlide()" src="./assets/svg/back.svg" class="arrow back">
     <div class="carousel">
       <div class="carousel-card">
         <p class="carousel-card-name">New Chair Collection 2022</p>
-        <a href="#" class="carousel-card-btn">SHOP NOW</a>
+        <a href="#" class="carousel-card-btn btn-light">SHOP NOW</a>
         <img src="./assets/img/garden-chair.png">
       </div>
       <div class="carousel-card">
         <p class="carousel-card-name">Lamp Desk Collection 2022</p>
-        <a href="#" class="carousel-card-btn">SHOP NOW</a>
+        <a href="#" class="carousel-card-btn btn-light">SHOP NOW</a>
         <img src="./assets/img/desk-lamp.png">
       </div>
       <div class="carousel-card">
         <p class="carousel-card-name">Modern Chair Collection 2022</p>
-        <a href="#" class="carousel-card-btn">SHOP NOW</a>
+        <a href="#" class="carousel-card-btn btn-light">SHOP NOW</a>
         <img src="./assets/img/modern-chair.png">
       </div>
     </div>
@@ -42,9 +70,20 @@
   <section id="reviews"></section>
   <section id="recommend"></section>
   <section id="blog"></section>
-
-  <footer id="contact-us"></footer>
-
+  <footer id="contact-us">
+    <div class="company-icon">
+      <img id="footer-logo" src="./assets/svg/logo.svg">
+      <span class="company-name" id="footer-logo-name">interior</span>
+    </div>
+    <span id="first-fttext">Join Now For Early Access</span>
+    <span id="seconds-fttext">Suspendisse eu velit est. Cras nec vestibulum 
+      <br>quam. Donec tincidunt purus nec enim tincidunt, sit
+    </span>
+    <div id="subscribe-form">
+      <input type="email" placeholder="Enter your email address...">
+      <button id="footer-btn">SUBSCRIBE</button>
+    </div>
+  </footer>
   <script src="./scripts/carousel.js"></script>
 </body>
 </html>
