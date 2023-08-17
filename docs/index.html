@@ -14,74 +14,329 @@
     <div id="header-content">
       <div class="company-icon">
         <img id="header-logo" src="./assets/svg/logo.svg">
-        <span class="company-name">interior</span>
+        <span class="company-name" id="header-logo-name">interior</span>
       </div>
       <nav id="navigation-bar">
         <a href="#home" class="nav-btn">Home</a>
         <a href="#collections" class="nav-btn">Collections</a>
-        <a href="#items" class="nav-btn">Items</a>
-        <a href="#reviews" class="nav-btn">Reviews</a>
+        <a href="#products" class="nav-btn">Products</a>
+        <a href="#review" class="nav-btn">Reviews</a>
         <a href="#blog" class="nav-btn">Blog</a>
         <a href="#contact-us" class="nav-btn">Contact us</a>
       </nav> 
       <div id="customer-panel">
-        <img src="./assets/svg/serch.svg">
-        <img src="./assets/svg/basket.svg">
-        <div class="notification-circle"></div>
-        <span id="count-of-items">1</span>
+        <img id="search" class="btn" src="./assets/svg/search.svg">
+        <img id="cart" class="btn" src="./assets/svg/cart.svg">
+        <div class="notification-circle">
+          <span id="cart-items-count">1</span>
+        </div>
       </div>
     </div>
   </header>
   <section id="home">
-    <div id="home-content">
-      <div id="promo-block">
-        <div id="first-hptext">INTERIOR</div>
+    <div id="home-block">
+      <div id="home-content">
+        <div id="home-content-first">INTERIOR</div>
         <h1>Home Designs 
           <br>Made Easy
         </h1>
-        <span id="second-hptext">$416.00</span>
-        <span id="third-hptext">Starting</span>
+        <span id="home-content-second">$416.00</span>
+        <span id="home-content-third">Starting</span>
       </div>
-      <a href="#" id="promo-btn" class="carousel-card-btn btn-dark">SHOP NOW</a>
+      <a href="#" id="home-btn" class="btn btn-dark">SHOP NOW</a>
     </div>
   </section>
-  <section id="collections">
-    <img onclick="doBackSlide()" src="./assets/svg/back.svg" class="arrow back">
-    <div class="carousel">
+  <section id="collections" class="carousel" onmousemove="selectCarousel(0)">
+    <img onclick="doBackSlide()" src="./assets/svg/back.svg" class="btn arrow back">
+    <div class="carousel-content">
       <div class="carousel-card">
-        <p class="carousel-card-name">New Chair Collection 2022</p>
-        <a href="#" class="carousel-card-btn btn-light">SHOP NOW</a>
-        <img src="./assets/img/garden-chair.png">
+        <img src="./assets/img/collections/garden-chair.png">
+        <div class="carousel-card-content">
+          <p class="carousel-card-name">New Chair Collection 2023</p>
+          <a href="#" class="btn btn-light">SHOP NOW</a>
+        </div>
       </div>
       <div class="carousel-card">
-        <p class="carousel-card-name">Lamp Desk Collection 2022</p>
-        <a href="#" class="carousel-card-btn btn-light">SHOP NOW</a>
-        <img src="./assets/img/desk-lamp.png">
+        <img src="./assets/img/collections/desk-lamp.png">
+        <div class="carousel-card-content">
+          <p class="carousel-card-name">Lamp Desk Collection 2023</p>
+          <a href="#" class="btn btn-light">SHOP NOW</a>
+        </div>
       </div>
       <div class="carousel-card">
-        <p class="carousel-card-name">Modern Chair Collection 2022</p>
-        <a href="#" class="carousel-card-btn btn-light">SHOP NOW</a>
-        <img src="./assets/img/modern-chair.png">
+        <img src="./assets/img/collections/modern-chair.png">
+        <div class="carousel-card-content">
+          <p class="carousel-card-name">Modern Chair Collection 2023</p>
+          <a href="#" class="btn btn-light">SHOP NOW</a>
+        </div>
       </div>
     </div>
-    <img onclick="doForwardSlide()" src="./assets/svg/forward.svg" class="arrow forward">
+    <img onclick="doForwardSlide()" src="./assets/svg/forward.svg" class="btn arrow forward">
   </section>
-  <section id="items"></section>
-  <section id="reviews"></section>
-  <section id="recommend"></section>
-  <section id="blog"></section>
+  <section id="guarantee">
+    <div class="guarantee-block">
+      <img class="guarantee-block-img" src="./assets/svg/shipping.svg">
+      <div class="guarantee-block-content">
+        <p>Free Shipping</p>
+        <span>Capped at $319 per order</span>
+      </div>
+    </div>
+    <div class="guarantee-block">
+      <img class="guarantee-block-img" src="./assets/svg/return.svg">
+      <div class="guarantee-block-content">
+        <p>Free Returns</p>
+        <span>Within 25 Days</span>
+      </div>
+    </div>
+    <div class="guarantee-block">
+      <img class="guarantee-block-img" src="./assets/svg/secure.svg">
+      <div class="guarantee-block-content">
+        <p>100% Secure</p>
+        <span>100% Secure payment</span>
+      </div>
+    </div>
+  </section>
+  <section id="products">
+    <h2 class="left gold">PROFESSIONAL TEAM</h2>
+    <div class="header-with-btn">
+      <h3 class="left black">The Best New Arrivals</h3>
+      <a href="#" class="btn btn-light">See More Products</a>
+    </div>
+    <div class="gallery">
+      <div class="gallery-card">
+        <div class="gallery-card-img">
+          <img src="./assets/img/products/1.png">
+        </div>
+        <div class="gallery-card-widget">
+          <img class="btn" src="./assets/svg/refresh.svg">
+          <img class="btn" src="./assets/svg/like.svg">
+          <img class="btn" src="./assets/svg/in-cart.svg">
+        </div>
+        <div class="gallery-card-name">White chair</div>
+        <div class="gallery-card-price">
+          <p><span>$20.00</span> $15.00</p>
+          <img class="gallery-card-rating" src="./assets/svg/stars.svg">
+        </div>
+      </div>
+      <div class="gallery-card">
+        <div class="gallery-card-img">
+          <img src="./assets/img/products/2.png">
+        </div>
+        <div class="gallery-card-widget">
+          <img class="btn" src="./assets/svg/refresh.svg">
+          <img class="btn" src="./assets/svg/like.svg">
+          <img class="btn" src="./assets/svg/in-cart.svg">
+        </div>
+        <div class="gallery-card-name">Blue chair</div>
+        <div class="gallery-card-price">
+          <p><span>$18.00</span> $15.00</p>
+          <img class="gallery-card-rating" src="./assets/svg/stars.svg">
+        </div>
+      </div>
+      <div class="gallery-card">
+        <div class="gallery-card-img">
+          <img src="./assets/img/products/3.png">
+        </div>
+        <div class="gallery-card-widget">
+          <img class="btn" src="./assets/svg/refresh.svg">
+          <img class="btn" src="./assets/svg/like.svg">
+          <img class="btn" src="./assets/svg/in-cart.svg">
+        </div>
+        <div class="gallery-card-name">Coral vase</div>
+        <div class="gallery-card-price">
+          <p>$15.00</p>
+          <img class="gallery-card-rating" src="./assets/svg/stars.svg">
+        </div>
+      </div>
+      <div class="gallery-card">
+        <div class="gallery-card-img">
+          <img src="./assets/img/products/4.png">
+        </div>
+        <div class="gallery-card-widget">
+          <img class="btn" src="./assets/svg/refresh.svg">
+          <img class="btn" src="./assets/svg/like.svg">
+          <img class="btn" src="./assets/svg/in-cart.svg">
+        </div>
+        <div class="gallery-card-name">Coffee table set</div>
+        <div class="gallery-card-price">
+          <p>$15.00</p>
+          <img class="gallery-card-rating" src="./assets/svg/stars.svg">
+        </div>
+      </div>
+      <div class="gallery-card">
+        <div class="gallery-card-img">
+          <img src="./assets/img/products/5.png">
+        </div>
+        <div class="gallery-card-widget">
+          <img class="btn" src="./assets/svg/refresh.svg">
+          <img class="btn" src="./assets/svg/like.svg">
+          <img class="btn" src="./assets/svg/in-cart.svg">
+        </div>
+        <div class="gallery-card-name">Decorative vase</div>
+        <div class="gallery-card-price">
+          <p>$15.00</p>
+          <img class="gallery-card-rating" src="./assets/svg/stars.svg">
+        </div>
+      </div>
+      <div class="gallery-card">
+        <div class="gallery-card-img">
+          <img src="./assets/img/products/6.png">
+        </div>
+        <div class="gallery-card-widget">
+          <img class="btn" src="./assets/svg/refresh.svg">
+          <img class="btn" src="./assets/svg/like.svg">
+          <img class="btn" src="./assets/svg/in-cart.svg">
+        </div>
+        <div class="gallery-card-name">Coral vase</div>
+        <div class="gallery-card-price">
+          <p><span>$20.00</span> $15.00</p>
+          <img class="gallery-card-rating" src="./assets/svg/stars.svg">
+        </div>
+      </div>
+      <div class="gallery-card">
+        <div class="gallery-card-img">
+          <img src="./assets/img/products/7.png">
+        </div>
+        <div class="gallery-card-widget">
+          <img class="btn" src="./assets/svg/refresh.svg">
+          <img class="btn" src="./assets/svg/like.svg">
+          <img class="btn" src="./assets/svg/in-cart.svg">
+        </div>
+        <div class="gallery-card-name">Gray sofa</div>
+        <div class="gallery-card-price">
+          <p><span>$20.00</span> $15.00</p>
+          <img class="gallery-card-rating" src="./assets/svg/stars.svg">
+        </div>
+      </div>
+      <div class="gallery-card">
+        <div class="gallery-card-img">
+          <img src="./assets/img/products/8.png">
+        </div>
+        <div class="gallery-card-widget">
+          <img class="btn" src="./assets/svg/refresh.svg">
+          <img class="btn" src="./assets/svg/like.svg">
+          <img class="btn" src="./assets/svg/in-cart.svg">
+        </div>
+        <div class="gallery-card-name">Black chair</div>
+        <div class="gallery-card-price">
+          <p><span>$20.00</span> $15.00</p>
+          <img class="gallery-card-rating" src="./assets/svg/stars.svg">
+        </div>
+      </div>
+    </div>
+  </section>
+  <section id="review">
+    <h2 class="center white">WHAT PEOPLE SAY</h2>
+    <h3 class="center white">Words Of Our Clients</h3>
+      <div class="review-content">
+        <div class="review-card">
+          <img class="review-card-img" src="./assets/img/reviews/1.png">
+          <div class="review-card-content">
+            <p>Bessie Cooper</p>
+            <span>Communications Director</span>
+            <div class="rating">4.0</div>
+            <div class="comment">I Have Gotten At Least 50 Times The Value From Surely. After Using Surely My Business After Skyrocketed Heaven To Delhi</div>
+          </div>
+        </div>
+        <div class="review-card">
+          <img class="review-card-img" src="./assets/img/reviews/2.png">
+          <div class="review-card-content">
+            <p>Anjelina Jolie</p>
+            <span>Sales Manager</span>
+            <div class="rating">4.0</div>
+            <div class="comment">I Have Gotten At Least 50 Times The Value From Surely. After Using Surely My Business After Skyrocketed Heaven To Delhi</div>
+          </div>
+        </div>
+        <div class="review-card">
+          <img class="review-card-img" src="./assets/img/reviews/3.png">
+          <div class="review-card-content">
+            <p>Brooklyn Simmons</p>
+            <span>Public Relations Specialist</span>
+            <div class="rating">4.0</div>
+            <div class="comment">I Have Gotten At Least 50 Times The Value From Surely. After Using Surely My Business After Skyrocketed Heaven To Delhi</div>
+          </div>
+        </div>
+        <div class="review-card">
+          <img class="review-card-img" src="./assets/img/reviews/4.png">
+          <div class="review-card-content">
+            <p>Bessie Cooper</p>
+            <span>Communications Director</span>
+            <div class="rating">4.0</div>
+            <div class="comment">I Have Gotten At Least 50 Times The Value From Surely. After Using Surely My Business After Skyrocketed Heaven To Delhi</div>
+          </div>
+        </div>
+      </div>
+  </section>
+  <section id="blog">
+    <h2 class="center gold">RECENT ARTICLES</h2>
+    <h3 class="center black">Read Our Latest Articles</h3>
+    <div class="carousel" onmousemove="selectCarousel(1)">
+      <img onclick="doBackSlide()" src="./assets/svg/back.svg" class="btn arrow back">
+      <div class="carousel-content">
+        <div class="carousel-card">
+          <img src="./assets/img/articles/1.png">
+          <div class="carousel-card-date">
+            <p>05</p>
+            <span>May</span>
+          </div>
+          <div class="carousel-card-content">
+            <div class="carousel-card-content-about">
+              <div><span class="author">John Doe</span></div>
+              <div><span class="comments">9</span></div>
+            </div>
+            <p class="carousel-card-name">Things to Know When Choosing
+              the Perfect Sofa</p>
+            <a href="#" class="btn btn-light">See More Articles</a>
+          </div>
+        </div>
+        <div class="carousel-card">
+          <img src="./assets/img/articles/2.png">
+          <div class="carousel-card-date">
+            <p>23</p>
+            <span>Jun</span>
+          </div>
+          <div class="carousel-card-content">
+            <div class="carousel-card-content-about">
+              <div><span class="author">John Doe</span></div>
+              <div><span class="comments">3</span></div>
+            </div>
+            <p class="carousel-card-name">Things to Know When Choosing
+              the Perfect Sofa</p>
+            <a href="#" class="btn btn-light">See More Articles</a>
+          </div>
+        </div>
+        <div class="carousel-card">
+          <img src="./assets/img/articles/3.png">
+          <div class="carousel-card-date">
+            <p>15</p>
+            <span>May</span>
+          </div>
+          <div class="carousel-card-content">
+            <div class="carousel-card-content-about">
+              <div><span class="author">John Doe</span></div>
+              <div><span class="comments">6</span></div>
+            </div>
+            <p class="carousel-card-name">Things to Know When Choosing
+              the Perfect Sofa</p>
+            <a href="#" class="btn btn-light">See More Articles</a>
+          </div>
+        </div>
+      </div>
+      <img onclick="doForwardSlide()" src="./assets/svg/forward.svg" class="btn arrow forward">
+    </div>
+  </section>
   <footer id="contact-us">
     <div class="company-icon">
       <img id="footer-logo" src="./assets/svg/logo.svg">
       <span class="company-name" id="footer-logo-name">interior</span>
     </div>
-    <span id="first-fttext">Join Now For Early Access</span>
-    <span id="seconds-fttext">Suspendisse eu velit est. Cras nec vestibulum 
+    <span id="footer-content-first">Join Now For Early Access</span>
+    <span id="footer-content-seconds">Suspendisse eu velit est. Cras nec vestibulum 
       <br>quam. Donec tincidunt purus nec enim tincidunt, sit
     </span>
-    <div id="subscribe-form">
+    <div class="subscribe-form">
       <input type="email" placeholder="Enter your email address...">
-      <button id="footer-btn">SUBSCRIBE</button>
+      <button class="subscribe-btn">SUBSCRIBE</button>
     </div>
   </footer>
   <script src="./scripts/carousel.js"></script>

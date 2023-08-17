@@ -3,6 +3,7 @@ $secondary-font: 'Oswald', sans-serif;
 
 $font-first-color: #2C314B;
 $font-first-faded-color: #424242;
+$font-first-inverted-color: #E0E0E0;
 $font-second-faded-color: #8E8E8E;
 $font-second-color: #737373;
 $font-accent-color: #B47139;
@@ -44,15 +45,7 @@ body {
 footer {
   width: 1440px;
   padding-top: 96px;
-  margin-top: 20px;
-}
-
-h1 {
-  color: $card-dark-color;
-  font-size: 50px;
-  font-weight: 600;
-  padding-left: 18px;
-  padding-top: 7px;
+  margin-top: 40px;
 }
 
 a {
